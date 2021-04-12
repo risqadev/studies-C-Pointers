@@ -18,7 +18,8 @@ int main(void) {
           "*yPtr = %d (end. próprio: %p; end. apontado: %p)\n",
           y, &y, *yPtr, &yPtr, yPtr);
 
-  /*SINTETIZANDO:
+  /* SINTETIZANDO:
+
     xPtr  // valor próprio (que é um endereço de outra variável)
     &xPtr // endereço próprio (é diferente do que é referenciado)
     *xPtr // valor referenciado
@@ -68,7 +69,7 @@ int main(void) {
 
 
 
-  printf( "\n\nMostrando que * e & são complementos um do outro\n"
+  printf( "\n\nMostrando que '*' e '&' se complementam:\n"
           "&*aPtr = %p\n"
           "*&aPtr = %p\n",
           &*xPtr, *&xPtr );
